@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #1a5276;
+  --blue-light: #2e86c1;
+  --accent: #1a7a4a;
+  --text: #1c1c1c;
+  --muted: #555;
+  --bg: #f9f9f7;
+  --card: #ffffff;
+  --border: #dde3e8;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+header {
+  background: var(--blue);
+  color: white;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+header .subtitle {
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.75);
+  font-style: italic;
+}
+
+nav {
+  background: var(--blue-light);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.6rem 2rem;
+}
+
+nav a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+}
+
+section {
+  margin-bottom: 3.5rem;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: var(--blue);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+}
+
+.research-overview p {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.pub-list {
+  list-style: none;
+}
+
+.pub-list li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-style: italic;
+  color: var(--text);
+}
+
+.pub-authors {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.pub-venue {
+  color: var(--blue-light);
+  font-size: 0.88rem;
+}
+
+.pub-meta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.2rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.pub-year {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.pub-citations {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.6rem; }
+  nav { gap: 1rem; flex-wrap: wrap; }
+  main { padding: 2rem 1.2rem; }
+}

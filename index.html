@@ -1,37 +1,267 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aquatic Microbial Dynamics Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<header>
+  <h1>Aquatic Microbial Dynamics Lab</h1>
+  <div class="subtitle">David Talmy &mdash; Associate Professor of Microbiology, University of Tennessee</div>
+</header>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+<nav>
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+<main>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+  <section id="research" class="research-overview">
+    <h2>Research</h2>
+    <p>
+      We use mathematical models to study how aquatic microorganisms grow, interact, and die.
+      Our work spans ocean and freshwater systems, focusing on the ecological and biogeochemical
+      consequences of microbial processes at the scale of individual cells through to global ocean cycles.
+    </p>
+    <p>
+      A central theme is understanding mortality in microbial communities &mdash; including loss to
+      viruses, grazers, pathogenic bacteria, and oxidative stress &mdash; and how these processes
+      shape elemental cycling, community composition, and ecosystem function. We develop
+      mechanistic models grounded in physiology and test them against laboratory and field data.
+    </p>
+    <p>
+      Current interests include phytoplankton stoichiometry and photoadaptation, virus&ndash;host
+      population dynamics, microzooplankton grazing, and the integration of microbial processes
+      into Earth system models.
+    </p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul class="pub-list">
+
+      <li>
+        <div class="pub-title">Coastal bacteria and protists assimilate viral carbon and nitrogen</div>
+        <div class="pub-authors">Mart&iacute;nez Mart&iacute;nez J, Talmy D, Kimbrel JA, Weber PK, Mayali X</div>
+        <div class="pub-meta">
+          <span class="pub-venue">The ISME Journal</span>
+          <span class="pub-year">2024</span>
+          <span class="pub-citations">10 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Priorities, opportunities, and challenges for integrating microorganisms into Earth system models for climate change prediction</div>
+        <div class="pub-authors">Lennon JT, Abramoff RZ, Allison SD, et al.</div>
+        <div class="pub-meta">
+          <span class="pub-venue">mBio</span>
+          <span class="pub-year">2024</span>
+          <span class="pub-citations">36 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">A model of algal&ndash;virus population dynamics reveals underlying controls on material transfer</div>
+        <div class="pub-authors">Hinson A, Papoulis S, Fiet L, Knight M, Cho P, Szeltner B, Sgouralis I, et al.</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Limnology and Oceanography</span>
+          <span class="pub-year">2023</span>
+          <span class="pub-citations">13 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">The diel cycle of surface ocean elemental stoichiometry has implications for ocean productivity</div>
+        <div class="pub-authors">Garcia NS, Talmy D, Fu WW, Larkin AA, Lee J, Martiny AC</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Global Biogeochemical Cycles</span>
+          <span class="pub-year">2022</span>
+          <span class="pub-citations">11 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Marine phytoplankton resilience may moderate oligotrophic ecosystem responses and biogeochemical feedbacks to climate change</div>
+        <div class="pub-authors">Martiny AC, Hagstrom GI, DeVries T, Letscher RT, Britten GL, Garcia CA, et al.</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Limnology and Oceanography</span>
+          <span class="pub-year">2022</span>
+          <span class="pub-citations">48 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Open ocean particle flux variability from surface to seafloor</div>
+        <div class="pub-authors">Cael BB, Bisson K, Conte M, Duret MT, Follett CL, Henson SA, Honda MC, et al.</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Geophysical Research Letters</span>
+          <span class="pub-year">2021</span>
+          <span class="pub-citations">19 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Nutrient loading and viral memory drive accumulation of restriction modification systems in bloom-forming cyanobacteria</div>
+        <div class="pub-authors">Papoulis SE, Wilhelm SW, Talmy D, Zinser ER</div>
+        <div class="pub-meta">
+          <span class="pub-venue">mBio</span>
+          <span class="pub-year">2021</span>
+          <span class="pub-citations">14 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">A mechanistic model of macromolecular allocation, elemental stoichiometry, and growth rate in phytoplankton</div>
+        <div class="pub-authors">Inomura K, Omta AW, Talmy D, Bragg J, Deutsch C, Follows MJ</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Frontiers in Microbiology</span>
+          <span class="pub-year">2020</span>
+          <span class="pub-citations">76 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">The &ldquo;Neglected Viruses&rdquo; of Taihu: Abundant transcripts for viruses infecting eukaryotes and their potential role in phytoplankton succession</div>
+        <div class="pub-authors">Pound HL, Gann ER, Tang X, Krausfeldt LE, Huff M, Staton ME, Talmy D, et al.</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Frontiers in Microbiology</span>
+          <span class="pub-year">2020</span>
+          <span class="pub-citations">25 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Light regulation of coccolithophore host&ndash;virus interactions</div>
+        <div class="pub-authors">Thamatrakoln K, Talmy D, Haramaty L, Maniscalco C, Latham JR, et al.</div>
+        <div class="pub-meta">
+          <span class="pub-venue">New Phytologist</span>
+          <span class="pub-year">2019</span>
+          <span class="pub-citations">41 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">An empirical model of carbon flow through marine viruses and microzooplankton grazers</div>
+        <div class="pub-authors">Talmy D, Beckett SJ, Taniguchi DAA, Brussaard CPD, Weitz JS, et al.</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Environmental Microbiology</span>
+          <span class="pub-year">2019</span>
+          <span class="pub-citations">40 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Contrasting controls on microzooplankton grazing and viral infection of microbial prey</div>
+        <div class="pub-authors">Talmy D, Beckett SJ, Zhang AB, Taniguchi DAA, Weitz JS, Follows MJ</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Frontiers in Marine Science</span>
+          <span class="pub-year">2019</span>
+          <span class="pub-citations">30 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Biochemical diversity of glycosphingolipid biosynthesis as a driver of Coccolithovirus competitive ecology</div>
+        <div class="pub-authors">Nissimov JI, Talmy D, Haramaty L, Fredricks HF, Zelzion E, Knowles B, et al.</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Environmental Microbiology</span>
+          <span class="pub-year">2019</span>
+          <span class="pub-citations">23 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Diatom growth responses to photoperiod and light are predictable from diel reductant generation</div>
+        <div class="pub-authors">Li G, Talmy D, Campbell DA</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Journal of Phycology</span>
+          <span class="pub-year">2017</span>
+          <span class="pub-citations">41 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Extracting phytoplankton physiological traits from batch and chemostat culture data</div>
+        <div class="pub-authors">Omta AW, Talmy D, Sher D, Finkel ZV, Irwin AJ, Follows MJ</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Limnology and Oceanography: Methods</span>
+          <span class="pub-year">2017</span>
+          <span class="pub-citations">16 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Diel variability in the elemental composition of the marine cyanobacterium <em>Synechococcus</em></div>
+        <div class="pub-authors">Lopez JS, Garcia NS, Talmy D, Martiny AC</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Journal of Plankton Research</span>
+          <span class="pub-year">2016</span>
+          <span class="pub-citations">43 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Quantifying tradeoffs for marine viruses</div>
+        <div class="pub-authors">Record NR, Talmy D, V&aring;ge S</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Frontiers in Marine Science</span>
+          <span class="pub-year">2016</span>
+          <span class="pub-citations">47 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Microzooplankton regulation of surface ocean POC:PON ratios</div>
+        <div class="pub-authors">Talmy D, Martiny AC, Hill C, Hickman AE, Follows MJ</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Global Biogeochemical Cycles</span>
+          <span class="pub-year">2016</span>
+          <span class="pub-citations">34 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">Flexible C:N ratio enhances metabolism of large phytoplankton when resource supply is intermittent</div>
+        <div class="pub-authors">Talmy D, Blackford J, Hardman-Mountford NJ, Polimene L, Follows MJ, et al.</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Biogeosciences</span>
+          <span class="pub-year">2014</span>
+          <span class="pub-citations">62 citations</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">An optimality model of photoadaptation in contrasting aquatic light regimes</div>
+        <div class="pub-authors">Talmy D, Blackford J, Hardman-Mountford NJ, Dumbrell AJ, Geider RJ</div>
+        <div class="pub-meta">
+          <span class="pub-venue">Limnology and Oceanography</span>
+          <span class="pub-year">2013</span>
+          <span class="pub-citations">62 citations</span>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Department of Microbiology<br>
+      University of Tennessee, Knoxville<br>
+      <a href="https://scholar.google.com/citations?user=ZXix8Q4AAAAJ&hl=en" style="color: var(--blue-light);">Google Scholar</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Aquatic Microbial Dynamics Lab &mdash; University of Tennessee
+</footer>
+
+</body>
+</html>
