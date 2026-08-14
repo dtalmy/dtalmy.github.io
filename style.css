@@ -93,6 +93,59 @@ section h2 {
   color: var(--text);
 }
 
+section h3 {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--blue-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 1.6rem 0 0.8rem;
+}
+
+section h3:first-of-type {
+  margin-top: 0;
+}
+
+.member-list {
+  list-style: none;
+}
+
+.member-list li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.member-list li:last-child {
+  border-bottom: none;
+}
+
+.member-name {
+  color: var(--text);
+}
+
+.member-years {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.member-note {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.member-thesis {
+  color: var(--text);
+  font-size: 0.88rem;
+  margin: 0.15rem 0;
+}
+
+.member-list.simple li {
+  color: var(--text);
+}
+
 .pub-list {
   list-style: none;
 }
