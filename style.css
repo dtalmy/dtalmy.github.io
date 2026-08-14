@@ -112,7 +112,7 @@ section h3:first-of-type {
 }
 
 .member-list li {
-  padding: 0.7rem 0;
+  padding: 1.1rem 0;
   border-bottom: 1px solid var(--border);
   font-size: 0.95rem;
 }
@@ -121,8 +121,13 @@ section h3:first-of-type {
   border-bottom: none;
 }
 
+.member-list li > *:not(:first-child) {
+  margin-top: 0.35rem;
+}
+
 .member-name {
   color: var(--text);
+  margin-bottom: 0.1rem;
 }
 
 .member-years {
